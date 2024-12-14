@@ -1,0 +1,147 @@
+/* Reset básico */
+body, h1, h2, p, ul, li, a, img, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #101010;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #6666ff;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #6666ff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    
+}
+
+header nav ul li a:hover {
+    color: #8888ff;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Estilo de productos */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item {
+    background: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    color: #ffffff;
+    margin: 15px 0 10px;
+}
+
+.product-item p {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.product-item strong {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.product-item form {
+    margin-top: 15px;
+}
+
+.product-item input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+}
+
+.product-item button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: linear-gradient(90deg, #4444ff, #6666ff);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.product-item button:hover {
+    background: linear-gradient(90deg, #6666ff, #8888ff);
+}
+
+footer {
+    background: #101010;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 2px solid #6666ff;
+}
+
+footer p {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+}

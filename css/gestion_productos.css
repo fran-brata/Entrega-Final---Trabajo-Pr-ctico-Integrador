@@ -1,0 +1,184 @@
+/* Reset básico */
+body, h1, h2, p, a, input, button, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.product-management-container {
+    width: 90%;
+    max-width: 1200px;
+    background: #101010;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    padding: 20px 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.mensaje {
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    background: #222222;
+    color: #66ff66;
+    border: 1px solid #333333;
+    border-radius: 8px;
+}
+
+.add-product-form {
+    background: #181818;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.add-product-form h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #d9d9d9;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    background: #1a1a1a;
+    color: #ffffff;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+textarea.form-input {
+    resize: none;
+}
+
+.form-input:focus {
+    border-color: #6666ff;
+    outline: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px 15px;
+    background: linear-gradient(90deg, #4444ff, #6666ff);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(90deg, #6666ff, #8888ff);
+}
+
+.product-table {
+    margin-top: 20px;
+}
+
+.product-table h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.product-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-table table th, .product-table table td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #333333;
+    color: #d9d9d9;
+}
+
+.product-table table th {
+    background: #222222;
+    font-weight: 600;
+}
+
+.product-table table tr:hover {
+    background: #2a2a2a;
+}
+
+.product-table img {
+    border-radius: 8px;
+    max-width: 100px;
+    height: auto;
+}
+
+.product-table a {
+    color: #66aaff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.product-table a:hover {
+    color: #88ccff;
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-label {
+        font-size: 13px;
+    }
+
+    .form-input {
+        font-size: 13px;
+    }
+
+    .btn-submit {
+        font-size: 14px;
+    }
+
+    .product-table table th, .product-table table td {
+        font-size: 13px;
+        padding: 10px;
+    }
+}

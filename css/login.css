@@ -1,0 +1,141 @@
+/* Reset básico */
+body, h1, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0a0a0a, #1f1f1f);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-card {
+    background: #101010;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    font-size: 14px;
+    color: #d1d1d1;
+    margin-bottom: 30px;
+}
+
+/* Estilos de formulario */
+.login-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #d1d1d1;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    background: #1a1a1a;
+    color: #ffffff;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    border-color: #6666ff;
+    outline: none;
+}
+
+/* Botón de enviar */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #4444ff, #6666ff);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(90deg, #6666ff, #8888ff);
+}
+
+/* Mensaje de error */
+.error-message {
+    color: #ff6666;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Pie de página */
+.login-footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #d1d1d1;
+}
+
+.login-footer a {
+    color: #6666ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.login-footer a:hover {
+    color: #8888ff;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 20px;
+    }
+
+    .login-header h1 {
+        font-size: 22px;
+    }
+
+    .form-input {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .btn-submit {
+        font-size: 14px;
+    }
+}
